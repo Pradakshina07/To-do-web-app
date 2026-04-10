@@ -1,0 +1,89 @@
+body{
+    font-family: 'Segoe UI', Arial;
+    background: linear-gradient(120deg,#667eea,#764ba2);
+    margin:0;
+}
+
+/* main card */
+.box{
+    width:380px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+    color:#444;
+}
+
+/* inputs row */
+input,select,button{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    margin:5px 0;
+    width:100%;
+    box-sizing:border-box;
+}
+
+button{
+    background:#667eea;
+    color:white;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5a67d8;
+}
+
+/* stats text */
+#stats{
+    margin-top:10px;
+    font-weight:bold;
+    color:#666;
+}
+
+/* task items */
+li{
+    background:#f7f7f7;
+    margin:10px 0;
+    padding:12px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+}
+
+li:hover{
+    transform:scale(1.02);
+}
+
+/* completed task */
+.done{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+/* priority colors */
+.High{border-left:6px solid #ff4d4d;}
+.Medium{border-left:6px solid #ffa500;}
+.Low{border-left:6px solid #28c76f;}
+
+/* delete button inside task */
+li button{
+    width:auto;
+    padding:5px 10px;
+    background:#ff4d4d;
+}
+
+li button:hover{
+    background:#e63946;
+}
